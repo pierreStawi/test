@@ -1,8 +1,7 @@
 export  class Test{
-    constructor(
-    public nom:string,
-    public prenom:string,
-    public age:number,
-    public image:string,
-    ) { }
+    nom!:string;
+    prenom!:string;
+    age!:number;
+    image!:string;
+    adresse?:string;
 }
