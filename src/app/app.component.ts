@@ -8,33 +8,32 @@ import { Test } from './models/ModelToto';
 })
 export class AppComponent implements  OnInit{
 
-  raouf!: Test
-  mytoto!: Test
-  Othertoto!: Test
+
+  Tabs!: Test[];
 
   ngOnInit(){
-    this.mytoto = {
+    this.Tabs =[
+      {
       nom:'mon nom',
       prenom:'mon prenom',
       age:25,
       image:'https://moto-station.com/wp-content/uploads/2018/01/avis-kawasaki-750-Zephyr-4-1320x978.jpg',
       adresse: 'Lyon'
-    };
-
-    this.Othertoto = {
+    },
+    {
       nom:'victor',
       prenom:'titine',
       age:30,
       image:'https://moto-station.com/wp-content/uploads/2018/01/avis-kawasaki-750-Zephyr-4-1320x978.jpg',
-    };
-
-    this.raouf = {
+    },
+    {
       nom:'Kloe',
       prenom:'raouf',
       age:50,
       image:'https://moto-station.com/wp-content/uploads/2018/01/avis-kawasaki-750-Zephyr-4-1320x978.jpg',
       adresse: 'Paris',
-    };
+    }
+  ];
   }
 
 }
